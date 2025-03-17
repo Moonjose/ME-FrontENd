@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Travel</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <script type="module">
+        import { createHeader } from './components/header.js';
+        import { createFooter } from './components/footer.js';
+        import { createHomePage } from './components/homepage.js';
+
+        const header = createHeader();
+        const homePage = createHomePage();
+        const footer = createFooter();
+
+        document.body.prepend(header);
+        document.body.appendChild(homePage);
+        document.body.appendChild(footer);
+    </script>
+</body>
+</html>
