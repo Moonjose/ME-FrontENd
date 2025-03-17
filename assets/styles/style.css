@@ -39,7 +39,184 @@ footer {
     height: 100vh;
 }
 
-.main-offers {
-    background-color: #9b9b9b;
-    height: 100vh;
+.offers-section {
+    background-color: #00ff15;
+    height: 1000px;
+}
+
+.search-div {
+    background-color: red;
+    height: 20%;
+}
+
+.main-offers-div {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 40%;
+}
+
+.main-offers-title {
+    text-align: center;
+}
+
+.main-offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.favorite-offers-div { 
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: 40%;
+}
+
+.favorite-offers-title {
+    text-align: center;
+}
+
+.favorite-offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-image-div {
+    background-color: bisque;
+}
+
+.card-info-div {
+    background-color: aqua;
+}
+
+.hotel-card {
+    border: 2px solid #ddd;
+    width: 195px;
+    height: 240px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hotel-image {
+    width: 100%;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.filters-div {
+    display: flex;
+    gap: 16px;
+    
+}
+
+/* 
+    Search Input
+*/
+
+ .search-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #888;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 
+    Date Input
+*/
+
+.check-in-div, .check-out-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.date-input-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    max-width: 200px;
+
+}
+
+.date-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+}
+
+/* 
+    Number Input
+*/
+
+.adult-div, .children-div, .room-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number-input-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+    width: 135px
+}
+
+.number-icon {
+    font-size: 16px;
+    color: #888;
+}
+
+.number-input {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+    text-align: flex-start;
 }
