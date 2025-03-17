@@ -84,8 +84,8 @@ function loadOffers(container) {
                 card.innerHTML = `
                     <img src="${hotel.image}" alt="${hotel.name}" class="hotel-image">
                     <h3 class="hotel-name">${hotel.name}</h3>
-                    <p class="hotel-rating">Avaliação: ${"⭐".repeat(hotel.rating)}</p>
-                    <p class="hotel-price">Preço: R$ ${hotel.price}</p>
+                    <p class="hotel-rating">${hotel.rating}.0 ${"⭐".repeat(hotel.rating)}</p>
+                    <p class="hotel-price">Por R$ ${hotel.price} ao dia.</p>
                 `;
 
                 container.appendChild(card);

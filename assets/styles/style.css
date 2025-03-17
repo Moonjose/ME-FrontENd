@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+} */
+
+:root {
+    --primary-color: #1E1E1E;
+    --secondary-color: #333333;
+    --terciary-color: #131313;
+    --light-color: #FFFFFF;
+    --font-inter: "Inter", sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -44,22 +58,18 @@ footer {
     height: 1000px;
 }
 
-.search-div {
-    background-color: red;
-    height: 20%;
-}
-
 .main-offers-div {
-    background-color: green;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    height: 40%;
+    height: 42.5%;
 }
 
 .main-offers-title {
     text-align: center;
+    color: var(--light-color);
 }
 
 .main-offers-container {
@@ -69,16 +79,17 @@ footer {
 }
 
 .favorite-offers-div { 
-    background-color: yellow;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    height: 40%;
+    height: 42.5%;
 }
 
 .favorite-offers-title {
     text-align: center;
+    color: var(--light-color);
 }
 
 .favorite-offers-container {
@@ -87,19 +98,10 @@ footer {
     gap: 25px;
 }
 
-.card-image-div {
-    background-color: bisque;
-}
-
-.card-info-div {
-    background-color: aqua;
-}
-
 .hotel-card {
-    border: 2px solid #ddd;
     width: 195px;
     height: 240px;
-    background-color: white;
+    background-color: var(--light-color);
     border-radius: 15px;
     overflow: hidden;
 }
@@ -109,37 +111,37 @@ footer {
 }
 
 .search-div {
+    background-color: var(--primary-color);
     display: flex;
+    height: 15%;
     align-items: center;
     justify-content: center;
     width: 100%;
+    
 }
 
 .filters-div {
     display: flex;
-    gap: 16px;
-    
+    gap: 40px;
 }
 
 /* 
     Search Input
 */
 
- .search-input-wrapper {
+.search-input-wrapper {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 8px;
-    background-color: #fff;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px 8px;
+    background-color: var(--secondary-color);
+    height: 50px;
+    width: 360px;
 }
 
 .search-icon {
     margin-right: 8px;
-    font-size: 16px;
+    font-size: 24px;
     color: #888;
 }
 
@@ -148,7 +150,9 @@ footer {
     outline: none;
     flex: 1;
     font-size: 14px;
-    color: #333;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    height: 20px;
 }
 
 /* 
@@ -159,12 +163,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 140px;
 }
 
 .filter-label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--light-color);
+    font-family: var(--font-inter);
 }
 
 .date-input-wrapper {
@@ -174,7 +180,6 @@ footer {
     padding: 8px;
     width: 100%;
     max-width: 200px;
-
 }
 
 .date-input {
@@ -182,7 +187,7 @@ footer {
     outline: none;
     flex: 1;
     font-size: 14px;
-    color: #333;
+    color: var(--light-color);
     background-color: transparent;
 }
 
@@ -190,10 +195,11 @@ footer {
     Number Input
 */
 
-.adult-div, .children-div, .room-div {
+.adult-div, .child-div, .room-div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 140px;
 }
 
 .number-input-wrapper {
