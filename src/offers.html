@@ -11,7 +11,8 @@
         import { createHeader } from './components/header.js';
         import { createFooter } from './components/footer.js';
         import { createOffersPage } from './components/offers.js';
-
+        import { configureDatePicker } from './components/offers.js';
+        
         const header = createHeader();
         const offersPage = createOffersPage();
         const footer = createFooter();
@@ -19,6 +20,7 @@
         document.body.prepend(header);
         document.body.appendChild(offersPage);
         document.body.appendChild(footer);
+        configureDatePicker();
     </script>
 </body>
 </html>

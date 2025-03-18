@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*
+    Desabilita o icone de calendário nativo do input date
+*/
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
@@ -10,19 +13,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     --terciary-color: #131313;
     --light-color: #FFFFFF;
     --highlight-color: orange;
-    --font-inter: "Inter", sans-serif;
+    --primary-font: "Roboto", sans-serif;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: var(--primary-font);
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    color: var(--secondary-color);
 }
 
 header {
@@ -31,7 +33,6 @@ header {
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 15px 0px;
 }
 
 header nav a {
@@ -56,8 +57,7 @@ footer {
 }
 
 .offers-section {
-    background-color: #00ff15;
-    height: 1000px;
+    height: 900px;
 }
 
 .main-offers-div {
@@ -67,18 +67,20 @@ footer {
     justify-content: center;
     gap: 15px;
     height: 42.5%;
-    padding-bottom: 100px;
+    
 }
 
 .main-offers-title {
     text-align: center;
     color: var(--light-color);
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .main-offers-container {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .favorite-offers-div { 
@@ -93,12 +95,14 @@ footer {
 .favorite-offers-title {
     text-align: center;
     color: var(--light-color);
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .favorite-offers-container {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 /* 
@@ -109,12 +113,35 @@ footer {
     width: 195px;
     height: 240px;
     background-color: var(--light-color);
-    border-radius: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hotel-image-div {
+    position: relative;
+    width: 100%;
+    height: 65%; 
     overflow: hidden;
 }
 
 .hotel-info {
     padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35%;
+}
+
+.hotel-card:hover .hotel-image {
+    transform: scale(1.1);
+}
+
+.hotel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .hotel-price {
@@ -129,18 +156,13 @@ footer {
 }
 
 .price-highlight {
-    color: var(--highlight-color); 
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .star-icon {
     width: 16px; 
     height: 16px;
     object-fit: contain;
-}
-
-.hotel-image {
-    width: 100%;
 }
 
 /* 
@@ -154,11 +176,14 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+    padding-top: 50px;
 }
 
 .filters-div {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     gap: 40px;
 }
 
@@ -166,7 +191,6 @@ footer {
     font-size: 20px;
     font-weight: 400;
     color: var(--light-color);
-    font-family: var(--font-inter);
 }
 
 
@@ -177,14 +201,15 @@ footer {
 .search-input-wrapper {
     display: flex;
     align-items: center;
+    height: 50px;
+    width: 430px;
     border-radius: 8px;
     padding: 0px 8px;
     background-color: var(--secondary-color);
-    height: 50px;
-    width: 360px;
 }
 
 .search-icon-img {
+    display: flex;
     width: 25px; 
     height: 25px;
     object-fit: contain;
@@ -210,7 +235,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 140px; 
+    width: 180px; 
+    height: 55px;
 }
 
 /* Padronizando wrappers */
@@ -218,7 +244,7 @@ footer {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    padding: 8px;
+    padding-top: 8px;
     width: 100%; 
     height: 40px; 
     gap: 8px; 
@@ -230,6 +256,10 @@ footer {
     color: var(--light-color);
     width: 20px; 
     height: 20px;
+}
+
+.calendar-icon-img {
+    cursor: pointer;
 }
 
 /* Padronizando inputs */
@@ -269,9 +299,8 @@ footer {
 }
 
 .title_homePage{
-    color: white;
+    color: var(--light-color);
     font-size: 35px;
-    font-family: Inter;
     font-weight: 800;
     word-wrap: break-word;
     font-weight: 400;
@@ -288,18 +317,25 @@ footer {
     display: flex;
 }
 
-.header{
-    background-color: black;
-    font-family: "Inter", sans-serif;
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--terciary-color);
+    padding: 0px 105px;
     position: relative;
-    height:80px;
+    height: 80px;
+    width: 100%;
 }
 
 .clickables{
-    color: white;
-    font-size: 19px;
-    margin-left: 80%;
+    color: var(--light-color);
+    font-size: 16px;
     display: flex;
-    column-gap: 200%;
+    gap: 88px;
     white-space: nowrap;
+}
+
+.clickables a {
+    margin: 0;
 }

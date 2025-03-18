@@ -1,0 +1,33 @@
+[
+  {
+    "image": "/assets/img/Image6.png",
+    "name": "Hotel Walter Leite",
+    "rating": 3,
+    "price": 100
+  },
+  {
+    "image": "/assets/img/Image7.png",
+    "name": "Pousada dos Ventos",
+    "rating": 5,
+    "price": 220
+  },
+  {
+    "image": "/assets/img/Image8.jpg",
+    "name": "Hotel Paraíso Tropical",
+    "rating": 4,
+    "price": 180
+  },
+  {
+    "image": "/assets/img/Image9.jpg",
+    "name": "Chalé Serra Azul",
+    "rating": 3,
+    "price": 130
+  },
+  {
+    "image": "/assets/img/Image10.jpg",
+    "name": "Pousada Encanto Verde",
+    "rating": 5,
+    "price": 210
+  }
+  ]
+ 
