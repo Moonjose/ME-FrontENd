@@ -7,6 +7,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
+input[type="number"] {
+    background-image: url('../img/icons/InputBox.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    outline: none;
+    border: none;
+    width: 150;
+    height: 24px;
+    border-radius: 5px;
+}
+
 :root {
     --primary-color: #171717;
     --secondary-color: #333333;
@@ -51,7 +62,7 @@ footer {
 }
 
 .main {
-    background-image: url(../img/imageHomePage.png);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     height: 100vh;
 }
