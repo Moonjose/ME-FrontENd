@@ -27,7 +27,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     background-color: #333;
     color: white;
@@ -281,4 +281,25 @@ footer {
 #special_h1{
     color: #00FFCC;
     margin-bottom: 3%;
+}
+
+.logo{
+    height: 50px;
+    display: flex;
+}
+
+.header{
+    background-color: black;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    height:80px;
+}
+
+.clickables{
+    color: white;
+    font-size: 19px;
+    margin-left: 80%;
+    display: flex;
+    column-gap: 200%;
+    white-space: nowrap;
 }
