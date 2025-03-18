@@ -1,37 +1,37 @@
 [
     {
       "image": "/assets/img/Image.png",
-      "name": "Hotel Exemplo 1",
+      "name": "Pousada Boa Vista",
       "rating": 5,
       "price": 200
     },
     {
       "image": "/assets/img/Image2.png",
-      "name": "Hotel Exemplo 2",
+      "name": "Hotel Dejavú",
       "rating": 4,
       "price": 150
     },
     {
       "image": "/assets/img/Image3.png",
-      "name": "Hotel Exemplo 3",
+      "name": "Recanto das Sereias",
       "rating": 3,
       "price": 100
     },
     {
         "image": "/assets/img/Image.png",
-        "name": "Hotel Exemplo 1",
+        "name": "Residencial Horácio",
         "rating": 5,
         "price": 200
       },
       {
         "image": "/assets/img/Image2.png",
-        "name": "Hotel Exemplo 2",
+        "name": "Hotel Santa Mônica",
         "rating": 4,
         "price": 150
       },
       {
         "image": "/assets/img/Image3.png",
-        "name": "Hotel Exemplo 3",
+        "name": "Hotel Walter Leite",
         "rating": 3,
         "price": 100
       }
