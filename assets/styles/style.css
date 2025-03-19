@@ -31,6 +31,7 @@ input[type="number"] {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    letter-spacing: 1px;
     font-family: var(--primary-font);
 }
 
@@ -53,12 +54,57 @@ header nav a {
 }
 
 footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: #333;
     color: white;
     padding: 35px 0px;
+}
+
+.footer-subscribe{}
+
+#footer_content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    padding: 1rem 1rem;
+    color: white;
+    border-radius: 50%;
+}
+
+#footer_lists{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding: 3rem 3.5rem;
+}
+
+.footer-list{
+    list-style: none;
+    padding: 1rem 1rem;
+}
+
+.footer-list li{
+    margin-bottom: 20px;
+}
+
+#aRR{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#instagram{
+    color: white;
+}
+
+#facebook{
+    color: white;
+}
+
+#whatsapp{
+    color: white;
 }
 
 .main {
