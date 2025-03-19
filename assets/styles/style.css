@@ -56,29 +56,28 @@ header nav a {
 footer {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #333;
     color: white;
-    padding: 35px 0px;
+    padding: 25px 0px;
 }
 
-.footer-subscribe{}
 
 #footer_content {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    padding: 1rem 1rem;
+    grid-template-columns: repeat(3, 100px);
     color: white;
-    border-radius: 50%;
 }
 
 #footer_lists{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
-    padding: 3rem 3.5rem;
+    height: 100%;
+    gap: 50px;
+    padding: 0em 2.5rem;
 }
 
 .footer-list{
@@ -92,7 +91,7 @@ footer {
 
 #aRR{
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 #instagram{
